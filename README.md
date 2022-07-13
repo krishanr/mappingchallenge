@@ -10,7 +10,8 @@ See below for an inference example.
 
 ![Inference example](assets/inference-example.png)
 
-The notebooks in this repository can be run in Google Colab or Paperspace, and the instructions shall be described below.
+The model training notebook in this repository can be run in Google Colab or Paperspace, while the inference notebook using Voxel Fifty One should be run locally.
+The instructions shall be described below.
 
 ## Installation
 
@@ -26,7 +27,7 @@ wget https://raw.githubusercontent.com/airctic/icevision/master/icevision_instal
 source icevision_install.sh cuda11 master
 ```
 
-They've been tested on Google Colab and the Paperspace Pytorch image on July 2022.
+They've been tested on July 2022.
 
 ## Workflow
 
@@ -51,6 +52,7 @@ For testing purposes we will use the validation set, so replace "data/train" wit
 3. Configure and train models in "notebooks/wandb-building-detection.ipynb". Ideally you'll need a Weights & Biases (wandb)
    account to get this working.
 
-4. Analyze model performance using the notebook "notebooks/inference-building-detection.ipynb".
+4. Analyze model performance using the notebook "notebooks/inference-building-detection.ipynb". Note that this notebook should be run locally,
+   and is not guarenteed to work on Colab or Paperspace.
 
 This can be done without training a model by unzipping the model in the models folder.
